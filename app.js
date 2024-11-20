@@ -6,17 +6,26 @@
 const text1 = document.querySelector('.text1');
 console.log(text1);
 text1.classList.add('.hogehoge');
-const text2 =
-  document.querySelectorAll('.hogehoge');
+const text2 = document.querySelectorAll('.text2');
 console.log(text2);
-// text2.forEach((el) => {
-//   console.log(el);
-// });
 const text3 =
-  document.getElementsByClassName('hogehoge');
+  document.getElementsByClassName('text3');
 console.log(text3);
-// const hoge = document.getElementById('hoge');
-// console.log(hoge);
+
+// li要素を作って、ul-blockの中に追加。
+const div = document.createElement('div');
+div.classList.add('text1');
+div.textContent = 'テキスト1'; //ul-blockの子要素にliを追加する
+document
+  .querySelector('.textwrap1')
+  .appendChild(div); // もう一度表示
+
+const hogehoge1 =
+  document.querySelectorAll('.hogehoge');
+console.log(hogehoge1);
+const hogehoge2 =
+  document.getElementsByClassName('hogehoge');
+console.log(hogehoge2);
 
 //sample02
 // const ulChildNodeList = document.querySelectorAll(
