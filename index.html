@@ -11,7 +11,8 @@
     <section>
       <article>
         <div class="sample01">
-          <h2 class="head-title">元サンプル１です</h2>
+          <h2 id="head-title" class="head-title a b c d e f g h i j k l m n">サンプル１です</h2>
+          <h2 class="head-title j">サンプル１です</h2>
           <div class="textwrap1">
             <div class="text1">
               <p>最初テキスト1</p>
@@ -63,5 +64,24 @@
 
   </body>
   <script src="./app.js"></script>
+  <style>
+    #head-title {
+      color: black;
+    }
+
+    .head-title.j {
+      color: blue;
+    }
+
+    .head-title {
+      color: red;
+    }
+
+    .sample01 .a.b.c.d.e.f.g.h.i.j.k.l.m.n.head-title {
+      color: aqua;
+    }
+  </style>
+  <script>
+  </script>
 
 </html>
